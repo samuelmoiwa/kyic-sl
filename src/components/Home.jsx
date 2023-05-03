@@ -3,12 +3,14 @@ import Lottie from 'react-lottie';
 import kyic_1 from "../images/kyic_1.jpg";
 import kyic_2 from "../images/kyic_2.jpg";
 import stem_1 from "../images/stem_1.png";
+import hero_banner from "../gallery/hero_banner.jpg";
 import coding_image from "../lottie_files/coding_image.json";
 import robort_icon from "../lottie_files/robot_icon.json"
 import biology from "../lottie_files/biology.json"
 import entrepreneurship from "../lottie_files/entrepreneurship.json"
 import outreach from "../lottie_files/outreach.json"
 import workshops from "../lottie_files/workshops.json"
+
 
 export default function Home() {
   const services = [
@@ -52,7 +54,14 @@ export default function Home() {
 
   return (
     <div className="">
-      <section class="bg-blue-900 text-white">
+      <section class=" text-white
+        w-full bg-cover bg-center bg-no-repeat h-screen
+        align-middle justify-center
+        flex-col
+        flex items-center text-center"
+          style={{ backgroundImage: `url(${hero_banner})` }}
+        >
+
         <div class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
           <div class="mx-auto max-w-3xl text-center">
             <h1 class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
