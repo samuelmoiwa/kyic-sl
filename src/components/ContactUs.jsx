@@ -3,7 +3,6 @@ import { useForm } from "react-hook-form";
 import { HiUserCircle, HiMail, HiOutlinePencilAlt } from "react-icons/hi";
 import { IoIosSend } from "react-icons/io";
 import { AiOutlineLoading } from "react-icons/ai";
-import kyic_3 from "../images/kyic_3.png";
 
 const ContactUs = () => {
 
@@ -26,22 +25,15 @@ const ContactUs = () => {
 
   return (
     <>
-    <div className="bg-gray-100 w-full">
-        <div
-          className="
-        w-full bg-cover bg-no-repeat h-96
-        align-middle justify-center
-        flex-col
-        flex items-center text-center"
-          style={{ backgroundImage: `url(${kyic_3})` }}
-        >
-          <h1 className="text-white text-5xl font-bold ">Contact Us</h1>
-        </div>
-      </div>
-
+    <div className="text-center py-5 flex flex-col items-center justify-center">
+      <p className="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+        Contact us
+      </p>
+      <div className="w-16 h-2 bg-blue-800 mt-2"> </div>
+    </div>
     <div className="w-full max-w-lg mx-auto pt-10 pb-10 py-2 sm:py-10">
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="mb-4">
+        <div className="mb-4 mx-2">
           <label className="block text-gray-700 font-bold mb-2" htmlFor="name">
             Name <span className="text-red-500">*</span>
           </label>
@@ -62,7 +54,7 @@ const ContactUs = () => {
             <p className="text-red-500 text-xs mt-1">Name is required</p>
           )}
         </div>
-        <div className="mb-4">
+        <div className="mb-4 mx-2">
           <label className="block text-gray-700 font-bold mb-2" htmlFor="email">
             Email <span className="text-red-500">*</span>
           </label>
@@ -86,7 +78,7 @@ const ContactUs = () => {
             <p className="text-red-500 text-xs mt-1">Invalid email address</p>
           )}
         </div>
-        <div className="mb-4">
+        <div className="mb-4 mx-2">
           <label className="block text-gray-700 font-bold mb-2" htmlFor="message">
             Message <span className="text-red-500">*</span>
           </label>
