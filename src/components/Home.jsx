@@ -10,6 +10,7 @@ import biology from "../lottie_files/biology.json"
 import entrepreneurship from "../lottie_files/entrepreneurship.json"
 import outreach from "../lottie_files/outreach.json"
 import workshops from "../lottie_files/workshops.json"
+import ContactUs from "../components/ContactUs"
 
 
 export default function Home() {
@@ -98,9 +99,12 @@ export default function Home() {
       {/* <!--Container--> */}
       <section class="bg-white border-b py-8">
         <div class="container max-w-5xl mx-auto m-8">
-          <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-            Why STEM
-          </h2>
+        <div className="text-center py-2 flex flex-col items-center justify-center">
+            <p className="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+              Why STEM
+            </p>
+            <div className="w-16 h-2 bg-blue-800 mt-2"> </div>
+          </div>
           <div class="w-full mb-4">
             <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
           </div>
@@ -204,6 +208,11 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <section>
+        < ContactUs />
+      </section>
+
     </div>
   );
 }
