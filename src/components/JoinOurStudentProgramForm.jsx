@@ -153,10 +153,10 @@ function JoinStudentProgramForm() {
             rows="5"
           ></textarea>
         </div>
-        <div className="my-4">
+        <div className="mt-6 mx-2">
           <button
             type="submit"
-            className="px-4 py-2 font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
+            className="w-full px-4 py-2 font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
           >
             Submit
           </button>

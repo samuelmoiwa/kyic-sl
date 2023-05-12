@@ -1,4 +1,4 @@
-import { React } from "react";
+import React, { useEffect } from 'react';
 import Lottie from 'react-lottie';
 import kyic_1 from "../images/kyic_1.jpg";
 import kyic_2 from "../images/kyic_2.jpg";
@@ -12,8 +12,16 @@ import outreach from "../lottie_files/outreach.json"
 import workshops from "../lottie_files/workshops.json"
 import ContactUs from "../components/ContactUs"
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 export default function Home() {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const services = [
     {
       title: "Coding classes",
@@ -99,7 +107,7 @@ export default function Home() {
       {/* <!--Container--> */}
       <section class="bg-white border-b py-8">
         <div class="container max-w-5xl mx-auto m-8">
-        <div className="text-center py-2 flex flex-col items-center justify-center">
+          <div className="text-center py-2 flex flex-col items-center justify-center">
             <p className="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
               Why STEM
             </p>
@@ -109,7 +117,7 @@ export default function Home() {
             <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
           </div>
 
-          <div class="flex flex-wrap flex-row-reverse">
+          <div class="flex flex-wrap flex-row-reverse" data-aos="fade-up">
             <div class="w-full sm:w-1/2 p-6">
               <img class="w-full rounded shadow-md" src={kyic_2} alt="image" />
             </div>
@@ -133,7 +141,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+          <div class="flex flex-wrap flex-col-reverse sm:flex-row" data-aos="fade-up">
             <div class="w-full sm:w-1/2 p-6">
               <p class="text-gray-600 mb-8 text-justify">
                 Our mission is to create a vibrant ecosystem that fosters creativity,

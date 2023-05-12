@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import TeamMember from "../components/TeamMember";
 import teamData from "../components/teamData";
 import kyic_3 from "../images/kyic_3.png";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 function Team() {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
       <div className="bg-gray-100 w-full">
@@ -39,7 +47,7 @@ function Team() {
           <div className="mt-16 grid gap-16 lg:grid-cols-3 lg:max-w-none">
             {/* Map through teamData to create TeamMember components */}
             {teamData.map((member) => (
-              <div key={member.id} className="flex flex-col items-center">
+              <div key={member.id} className="flex flex-col items-center" data-aos="fade-up">
                 <div className="relative">
                   <img
                     className="w-full h-64 object-cover rounded-lg shadow-md"

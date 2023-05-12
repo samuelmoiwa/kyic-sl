@@ -16,7 +16,6 @@ const cards = [
     description:
       `Our coding classes are designed to teach students the basics of coding and software
       development. We believe that coding is a critical skill in the digital age.`,
-    time: "12 min ago",
   },
   {
     category: "Game Design and Development",
@@ -25,7 +24,6 @@ const cards = [
     description:
       `Our game design and development classes are designed to teach students the basics of
       game design and development. using open source software like Scratch and Unity.`,
-    time: "12 min ago",
   },
   {
     category: "Entrepreneurship",
@@ -35,7 +33,6 @@ const cards = [
       `Our entrepreneurship programs are designed to provide students with the skills and knowledge
       needed to start and run a successful business. it is a critical skill that is needed in today's economy.
       `,
-    time: "12 min ago",
   },
   {
     category: "Scratch Programming",
@@ -44,7 +41,6 @@ const cards = [
     description:
       `Our coding classes are designed to teach students the basics of coding and software
       development. We believe that coding is a critical skill in the digital age.`,
-    time: "12 min ago",
   },
   {
     category: "VEX Robotics",
@@ -53,7 +49,6 @@ const cards = [
     description:
       `Our robotics workshops are designed to teach students the fundamentals of robotics and
       engineering. robotics is an exciting field that combines science, engineering, and mathematics.`,
-    time: "12 min ago",
   },
 ];
 
