@@ -26,12 +26,12 @@ const ContactUs = () => {
   return (
     <>
     <div className="text-center py-5 flex flex-col items-center justify-center">
-      <p className="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+      <p className="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl" data-aos="fade-up">
         Contact us
       </p>
-      <div className="w-16 h-2 bg-blue-800 mt-2"> </div>
+      <div className="w-16 h-2 bg-blue-800 mt-2" data-aos="fade-right"> </div>
     </div>
-    <div className="w-full max-w-lg mx-auto pt-10 pb-10 py-2 sm:py-10">
+    <div className="w-full max-w-lg mx-auto pt-10 pb-10 py-2 sm:py-10" data-aos="fade-up">
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-4 mx-2">
           <label className="block text-gray-700 font-bold mb-2" htmlFor="name">
