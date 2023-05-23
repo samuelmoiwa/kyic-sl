@@ -19,7 +19,16 @@ import 'aos/dist/aos.css';
 export default function Home() {
 
   useEffect(() => {
-    AOS.init();
+    const initAOS = () => {
+      setTimeout(() => {
+        AOS.init({
+          delay: 300, // Delay before animations start (in milliseconds)
+          //offset: 100 // Offset (in pixels) from the original trigger point
+        });
+      }, 1000); // Delay before initializing AOS (in milliseconds)
+    };
+
+    initAOS();
   }, []);
 
   const services = [
@@ -108,10 +117,10 @@ export default function Home() {
       <section class="bg-white border-b py-8">
         <div class="container max-w-5xl mx-auto m-8">
           <div className="text-center py-2 flex flex-col items-center justify-center">
-            <p className="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+            <p className="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl" data-aos="fade-up">
               Why STEM
             </p>
-            <div className="w-16 h-2 bg-blue-800 mt-2"> </div>
+            <div className="w-16 h-2 bg-blue-800 mt-2" data-aos="fade-right"> </div>
           </div>
           <div class="w-full mb-4">
             <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
@@ -177,16 +186,16 @@ export default function Home() {
       <div className="bg-gray-100 pb-24 mt-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24 mb-10">
           <div className="text-center py-16 flex flex-col items-center justify-center">
-            <p className="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+            <p className="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl" data-aos="fade-up">
               What we do
             </p>
-            <div className="w-16 h-2 bg-blue-800 mt-2"> </div>
+            <div className="w-16 h-2 bg-blue-800 mt-2" data-aos="fade-right"> </div>
           </div>
           <div className="max-w-3xl mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
             {services.map((service) => (
               <div
               key={service.title}
-              className="bg-white overflow-hidden shadow rounded-lg"
+              className="bg-white overflow-hidden shadow rounded-lg" data-aos="fade-up"
             >
               <div className="relative h-48">
               <Lottie
