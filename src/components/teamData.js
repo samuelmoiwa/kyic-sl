@@ -14,7 +14,7 @@ const teamData = [
     skills: [],
     socialHandles: [
       {
-        name: 'Facebook',
+        name: 'Twitter',
         url: 'https://fb.com/hawayokie',
       },
       {
@@ -53,7 +53,7 @@ const teamData = [
     skills: [],
     socialHandles: [
       {
-        name: 'Facebook',
+        name: 'Twitter',
         url: 'https://fb.com/hawayokie',
       },
       {
@@ -62,7 +62,7 @@ const teamData = [
       },
     ],
   },
-  
+
   // add more team members here
   ];
 
