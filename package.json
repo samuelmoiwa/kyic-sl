@@ -17,6 +17,7 @@
     "react-hook-form": "^7.43.9",
     "react-icons": "^4.8.0",
     "react-lottie": "^1.2.3",
+    "react-multi-carousel": "^2.8.4",
     "react-router-dom": "^6.9.0",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
