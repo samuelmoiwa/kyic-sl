@@ -2,13 +2,13 @@
 /* eslint-disable react/jsx-no-undef */
 /* eslint-disable react/style-prop-object */
 import React, { useEffect } from 'react';
-import ProgramsCardList from "./StudentProgramCard";
 import JoinStudentProgramForm from "./JoinOurStudentProgramForm";
 import kyic_3 from "../images/kyic_3.png";
 import kyic_img1 from "../images/kyic_img1.jpg"
 import kyic_img2 from "../images/kyic_img2.jpg"
 import kyic_img3 from "../images/kyic_img3.jpg"
 import join_our_student_program from "../images/join_our_program.svg";
+import StudentProgramCards from './StudentPrograms';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -47,7 +47,10 @@ export default function StudentPrograms() {
           <div className="flex flex-wrap">
             <div className="w-full sm:w-1/2 p-6" data-aos="fade-up">
               <p className="text-gray-600 mb-8 text-justify">
-                The Kamara Yokie Innovation Center (KYIC) is a youth-led center in Sierra Leone that promotes STEM education and develops young entrepreneurs in Africa. KYIC engages students through STEM education programs, offering hands-on experience in science, technology, engineering, and mathematics. Students participate in workshops, seminars, and mentorship sessions to excel in STEM subjects.
+                The Kamara Yokie Innovation Center (KYIC) is a youth-led center in Sierra Leone that promotes STEM
+                education and develops young entrepreneurs in Africa. KYIC engages students through STEM education
+                programs, offering hands-on experience in science, technology, engineering, and mathematics. Students
+                participate in workshops, seminars, and mentorship sessions to excel in STEM subjects.
               </p>
             </div>
 
@@ -57,7 +60,10 @@ export default function StudentPrograms() {
 
             <div className="w-full sm:w-1/2 p-6" data-aos="fade-up">
               <p className="text-gray-600 mb-8 text-justify">
-                KYIC also offers an entrepreneurship program, guiding students in developing their business ideas into viable ventures. They learn practical skills such as marketing, financial management, and business planning. Additionally, KYIC conducts outreach initiatives, partnering with schools and communities to promote STEM education and entrepreneurship.
+                KYIC also offers an entrepreneurship program, guiding students in developing their business ideas
+                into viable ventures. They learn practical skills such as marketing, financial management,
+                and business planning. Additionally, KYIC conducts outreach initiatives, partnering with
+                schools and communities to promote STEM education and entrepreneurship.
               </p>
             </div>
 
@@ -67,7 +73,10 @@ export default function StudentPrograms() {
 
             <div className="w-full sm:w-1/2 p-6" data-aos="fade-up">
               <p className="text-gray-600 mb-8 text-justify">
-                Through their online platform, KYIC provides access to educational resources, videos, tutorials, and interactive activities, ensuring students across Africa can learn and grow regardless of their location. Overall, KYIC equips students with the knowledge, skills, and resources they need to succeed in the 21st century.
+                Through their online platform, KYIC provides access to educational resources, videos, tutorials, and
+                interactive activities, ensuring students across Africa can learn and grow regardless of their location.
+                Overall, KYIC equips students with the knowledge, skills, and resources they need to succeed in the
+                21st century.
               </p>
             </div>
 
@@ -78,12 +87,13 @@ export default function StudentPrograms() {
         </div>
       </section>
 
-      <section class="bg-white border-b py-6">
+
+      <section class="bg-gray-100 border-b py-6">
         <div class="container max-w-7xl mx-auto m-8 p-6">
           <h2 class="w-full my-2 text-3xl font-bold leading-tight text-center text-gray-800 mb-10">
             Student Programs
           </h2>
-          <ProgramsCardList />
+          <StudentProgramCards />
         </div>
       </section>
 
